@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dining</title>
+
+    <style>
+        .dining-intro {
+    text-align: center;
+    padding: 20px;
+    background: #dcd6d6; /* Light background for contrast */
+    margin-bottom: 20px;
+}
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('./home.jpg') no-repeat center center fixed; /* Replace with your image */
+    background-size: cover;
+     /* Change text color for better contrast */
+}
+
+.h1{
+    color: black;
+}
+
+.dining-intro h2 {
+    font-size: 3rem;
+    color: #18191a;
+}
+
+.dining-intro p {
+    font-size: 2rem;
+    color: #333;
+}
+
+.dining-options {
+    margin-top: 20rem   ;
+}
+
+.dining-options h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.dining-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive layout */
+    gap: 20px;
+}
+
+.dining-item {
+    background: rgba(30, 28, 28, 0.313);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+}
+
+.dining-item img {
+    width: 100%;
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover; /* Crop images nicely */
+    flex-direction: row;
+}
+
+.dining-item h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.dining-item p {
+    margin: 0 10px 10px;
+    line-height: 1.4;
+    color: white; /* Softer text color */
+}
+    main{
+        margin-top: 30rem;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="dining-intro">
+            <h2>Welcome to Our Dining Experience</h2>
+            <p>Indulge in a variety of culinary delights at our hotel. From fine dining to casual eateries, we offer something for every palate.</p>
+        </section>
+
+        <section class="dining-options">
+            
+            <div class="dining-grid">
+                <div class="dining-item">
+                    <img src="./dining1.jpg" alt="Elegant Restaurant">
+                    <h3>Elegant Restaurant</h3>
+                    <p>Experience fine dining with exquisite cuisine and a luxurious ambiance.</p>
+                </div>
+                <div class="dining-item">
+                    <img src="./dining2.jpg" alt="Buffet">
+                    <h3>Buffet Style Dining</h3>
+                    <p>Enjoy a lavish buffet with a wide selection of international dishes.</p>
+                </div>
+                <div class="dining-item">
+                    <img src="./dining3.jpg" alt="Cozy Café">
+                    <h3>Cozy Café</h3>
+                    <p>Relax with coffee and light meals in our inviting café.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
